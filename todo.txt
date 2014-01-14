@@ -1,0 +1,14 @@
+1) Design page - DONE
+2) Layout w/ dummy items and lists: - DONE
+   * items (checkbox w/ list)
+   * EC: list sidebar, item area, plus icon for adding lists
+   * EC: learn how to create popup, at certain location, to enter list title
+3) Implement the ability to add an item to the list
+4) Implement ability to detect when item is checked
+5) Style a checked item
+6) Move checked item to bottom of list
+7) Create new list
+   * clear out item area
+8) Be able to detect which list is checked
+9) When a list is selected, clear out current item area, and populate with
+   new area.

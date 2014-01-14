@@ -44,3 +44,115 @@ table {
 }
 
 /*---------------------------------*/
+
+body {
+	background-color: #eeeeee;
+}
+
+header {
+	text-align: center;
+	min-height: 75px;
+	margin-bottom: 25px;
+}
+
+#topListSidebar {
+	position: absolute;
+	width:25%;
+}
+
+#topItemList {
+	position: absolute;
+	left: 25%;
+}
+
+#shoppingList {
+	position: relative;
+	font-family: verdana,helvetica,arial,sans-serif;
+	margin-left: 30px;
+	min-width: 450px;
+}
+
+#listSidebar {
+	position: absolute;
+	left:0;
+	box-shadow: 3px 3px 10px rgba(50, 50, 50, 0.1);
+	/*border:1px solid #aaaaaa;*/
+	border-radius: 20px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-left: transparent;
+	width:25%;
+	background-color: #ffffff;
+	min-height:300px;
+	min-width: 100px;
+}
+
+#lists {
+	margin:10px 5px 10px 20px;
+	font-size: 16px;
+	/*list-style: disc;*/
+}
+
+#lists li {
+	margin-bottom: 8px;
+}
+
+#itemList {
+	position: absolute;
+	left:25%;
+	right: 0;
+	margin-top: -30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 12px;
+}
+
+#currentList {
+	color:#232323;
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#addSection {
+	position: relative;
+	height: 20px;
+	margin-bottom: 15px;
+}
+
+#addItemText {
+	display: inline-block;
+	vertical-align: middle;
+	width: 75%;
+	height:100%;
+	font-size: 14px;
+}
+
+#addItemButton {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 6px 7px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	background-color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+fieldset {
+	border: none;
+}
+
+#items li {
+	margin-bottom: 5px;
+}
+
+#items li p {
+	display: inline-block;
+}
+
+#items li p.checked {
+	text-decoration: line-through;
+	color:#999;
+}
+
