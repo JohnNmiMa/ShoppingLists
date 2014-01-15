@@ -84,7 +84,6 @@ $(document).ready(function() {
 				for (var item in itemsInList) {
 					displayItem(itemsInList[item]);
 				}
-				// $('li.selected').toggleClass('selected');
 			}
 			currentList = newList;
 		}
