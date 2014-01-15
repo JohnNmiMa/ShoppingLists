@@ -12,3 +12,9 @@
 8) Be able to detect which list is checked - DONE
 9) When a list is selected, clear out current item area, and populate with
    new area. - DONE
+-----
+Future:
+- Make list name and items editable (fix spelling)
+- Be able to delete a list
+- Be able to clear checked off items
+- Remember item checked off state when switching from one list to another
