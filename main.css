@@ -51,8 +51,14 @@ body {
 
 header {
 	text-align: center;
-	min-height: 75px;
-	margin-bottom: 25px;
+	margin-bottom: 50px;
+}
+
+header h1 {
+	padding-top: 15px;
+	font-family: "Crimson-Semibold", "Times New Roman", Georgia, serif;
+	font-size: 48px;
+	color:#00d;
 }
 
 #topListSidebar {
@@ -67,6 +73,7 @@ header {
 
 #shoppingList {
 	position: relative;
+	height:100%;
 	font-family: verdana,helvetica,arial,sans-serif;
 	margin-left: 30px;
 	min-width: 450px;
@@ -87,72 +94,78 @@ header {
 	min-width: 100px;
 }
 
-#lists {
-	margin:10px 5px 10px 20px;
-	font-size: 16px;
-	/*list-style: disc;*/
-}
+	#lists {
+		margin:10px 5px 10px 20px;
+		font-size: 16px;
+	}
 
-#lists li {
-	margin-bottom: 8px;
-}
+	#lists .list {
+		margin-bottom: 8px;
+		cursor: pointer;
+	}
+
+	img {
+		position: absolute;
+		bottom: 0;
+		left:0;
+		height:24px;
+		width: 24px;
+		margin-bottom: 5px;
+		margin-left: 20px;
+		cursor:pointer;
+	}
 
 #itemList {
 	position: absolute;
 	left:25%;
 	right: 0;
-	margin-top: -30px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin:-30px 20px 0 20px;
 	font-size: 12px;
+	/*min-width: 400px;*/
 }
 
-#currentList {
-	color:#232323;
-	font-size: 20px;
-	text-align: center;
-	padding-bottom: 10px;
-}
+	#currentList {
+		color:#232323;
+		font-size: 20px;
+		text-align: center;
+		padding-bottom: 10px;
+		height: 20px;
+	}
 
-#addSection {
-	position: relative;
-	height: 20px;
-	margin-bottom: 15px;
-}
+	#addSection {
+		position: relative;
+		height: 20px;
+		margin-bottom: 15px;
+	}
 
-#addItemText {
-	display: inline-block;
-	vertical-align: middle;
-	width: 75%;
-	height:100%;
-	font-size: 14px;
-}
+		#addItemText {
+			display: inline-block;
+			vertical-align: middle;
+			width: 75%;
+			height:100%;
+			font-size: 14px;
+		}
 
-#addItemButton {
-	display: inline-block;
-	vertical-align: middle;
-	padding: 6px 7px;
-	border: 1px solid #aaa;
-	border-radius: 5px;
-	background-color: #fff;
-	text-align: center;
-	cursor: pointer;
-}
+		#addItemButton {
+			display: inline-block;
+			vertical-align: middle;
+			padding: 6px 7px;
+			border: 1px solid #aaa;
+			border-radius: 5px;
+			background-color: #fff;
+			text-align: center;
+			cursor: pointer;
+		}
 
-fieldset {
-	border: none;
-}
+	#items li {
+		margin-bottom: 5px;
+	}
 
-#items li {
-	margin-bottom: 5px;
-}
+	#items li label.checked {
+		text-decoration: line-through;
+		color:#999;
+	}
 
-#items li p {
-	display: inline-block;
+.ui-tooltip {
+	font-size: 9px;
 }
-
-#items li p.checked {
-	text-decoration: line-through;
-	color:#999;
-}
-

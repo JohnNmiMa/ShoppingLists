@@ -1,45 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<link type="text/css" rel="stylesheet" href="main.css">
 		<title>John's Shopping List</title>
-		<script type="text/javascript" src="jquery-2.0.3.js"></script>
+		<link href="css/smooth/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="main.css">
+		<script src="js/jquery-1.9.1.js"></script>
+		<script src="js/jquery-ui-1.10.3.custom.js"></script>
 		<script type="text/javascript" src="application.js"></script>
 	</head>
 	<body>
 		<header>
+			<h1>Shopping Lists</h1>
 		</header>
 		<div id="shoppingList">
 			<section id="listSidebar">
 				<ul id="lists">
-					<li>Safeway</li>
-					<li>Sprouts</li>
 				</ul>
+				<img src="plus.png" title="Create a new list">
 			</section>
 			<section id="itemList">
-				<h1 id="currentList">Sprouts</h1>
+				<h1 id="currentList"></h1>
 				<form>
 					<div id="addSection">
-							<input id="addItemText" type="text" name="addItem">
-							<div id="addItemButton">+Add</div>
+							<input id="addItemText" type="text" name="addItem" autocomplete="off" placeholder="Create a new item...">
+							<div id="addItemButton" title="Add a new item">+Add</div>
 					</div>
-					<fieldset>
-						<ul id="items">
-							<li>
-								<input type="checkbox" name="item1">
-								<p class="item">This is the first item in the list</p>
-							</li>
-							<li>
-								<input type="checkbox" name="item2">
-								<p class="item">This is the second item in the list</p>
-							</li>
-							<li>
-								<input type="checkbox" name="item3">
-								<p class="item">This is the second item in the list</p>
-							</li>														
-						</ul>
-					</fieldset>
 				</form>
+				<div>
+					<ul id="items">
+					</ul>
+				</div>
 			</section>
 		</div>
 	</body>

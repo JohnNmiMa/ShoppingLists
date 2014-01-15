@@ -3,9 +3,9 @@
    * items (checkbox w/ list)
    * EC: list sidebar, item area, plus icon for adding lists
    * EC: learn how to create popup, at certain location, to enter list title
-3) Implement the ability to add an item to the list
-4) Implement ability to detect when item is checked
-5) Style a checked item
+3) Implement the ability to add an item to the list - DONE
+4) Implement ability to detect when item is checked - DONE
+5) Style a checked item - DONE
 6) Move checked item to bottom of list
 7) Create new list
    * clear out item area
