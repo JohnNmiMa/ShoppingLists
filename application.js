@@ -117,7 +117,8 @@ $(document).ready(function() {
 		$(parent).toggleClass('checked');
 	});
 
-	function addItem(itemText) {
+	function addItem() {
+		var itemText = $('#addItemText').val();
 		try {
 			var sl = shopper.getShoppingList(currentList);
 			if (sl == undefined) throw Error(currentList + " does not exist!")
@@ -132,17 +133,9 @@ $(document).ready(function() {
 		}
 	}
 
-	$('#addItemButton').click(function(event) {
-		var itemText = $('#addItemText').val();
-		addItem(itemText);
-		return true;
-	});
+	$('#addItemButton').click(addItem);
 
-	$('form').submit(function(event) {
-		var itemText = $('#addItemText').val();
-		addItem(itemText);
-		return true;
-	});
+	$('form').submit(addItem);
 
 	function resetForm(event) {
 		$('#addItemText').val("");
