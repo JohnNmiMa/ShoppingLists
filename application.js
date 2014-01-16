@@ -134,7 +134,6 @@ $(document).ready(function() {
 	}
 
 	$('#addItemButton').click(addItem);
-
 	$('form').submit(addItem);
 
 	function resetForm(event) {
